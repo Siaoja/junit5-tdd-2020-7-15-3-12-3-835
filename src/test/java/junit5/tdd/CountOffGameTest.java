@@ -49,4 +49,17 @@ public class CountOffGameTest {
         Assertions.assertEquals("Fizz",actual);
     }
 
+
+    @Test
+    void should_given_5_when_play_count_off_game_then_return_Buzz() {
+//        given
+        int number = 5;
+
+//        when
+        CountOffGame countOffGame = new CountOffGame();
+        String actual = CountOffGame.play(number);
+
+//        then
+        Assertions.assertEquals("Buzz",actual);
+    }
 }
