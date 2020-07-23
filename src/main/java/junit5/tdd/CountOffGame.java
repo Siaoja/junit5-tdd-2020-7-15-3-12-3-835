@@ -1,10 +1,9 @@
 package junit5.tdd;
 
-import com.google.common.base.Strings;
 
 public class CountOffGame {
 
-    public static String play(int number) {
+    public String play(int number) {
         String result = "";
 
         if (number % 3 == 0) {
@@ -16,7 +15,7 @@ public class CountOffGame {
         if (number % 7 == 0) {
             result += "Whizz";
         }
-        if(result.isEmpty()){
+        if (result.isEmpty()) {
             result = String.valueOf(number);
         }
 

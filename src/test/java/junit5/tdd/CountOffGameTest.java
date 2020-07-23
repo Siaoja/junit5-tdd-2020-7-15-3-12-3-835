@@ -1,29 +1,29 @@
 package junit5.tdd;
 
-import javafx.scene.media.AudioClip;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+
 /*
-* 测试用例1：
-* input: 1, output: 1;
-* 测试用例2:
-* input: 3, output: Fizz
-* 测试用例3:
-* input: 5, output: Buzz
-* 测试用例4:
-* input 7, output: Whizz
-* 测试用例5:
-* input: 15, output: FizzBuzz
-* 测试用例6:
-* input: 21, output: FizzWhizz
-* 测试用例7:
-* input: 35, output: BuzzWhizz
-* 测试用例8:
-* input: 105, output: FizzBuzzWhizz
-*
-* [Junit-TDD-practice][spike lu] feature: implement given 1 when count off game play then return 1.
-* "[Junit-TDD-practice][spike lu] feature: add should_given_1_when_play_count_off_game_then_return_1 test"
-* */
+ * 测试用例1：
+ * input: 1, output: 1;
+ * 测试用例2:
+ * input: 3, output: Fizz
+ * 测试用例3:
+ * input: 5, output: Buzz
+ * 测试用例4:
+ * input 7, output: Whizz
+ * 测试用例5:
+ * input: 15, output: FizzBuzz
+ * 测试用例6:
+ * input: 21, output: FizzWhizz
+ * 测试用例7:
+ * input: 35, output: BuzzWhizz
+ * 测试用例8:
+ * input: 105, output: FizzBuzzWhizz
+ *
+ * [Junit-TDD-practice][spike lu] feature: implement given 1 when count off game play then return 1.
+ * "[Junit-TDD-practice][spike lu] feature: add should_given_1_when_play_count_off_game_then_return_1 test"
+ * */
 public class CountOffGameTest {
     @Test
     void should_given_1_when_play_count_off_game_then_return_1() {
@@ -32,10 +32,10 @@ public class CountOffGameTest {
 
 //        when
         CountOffGame countOffGame = new CountOffGame();
-        String actual = CountOffGame.play(number);
+        String actual = countOffGame.play(number);
 
 //        then
-        Assertions.assertEquals("1",actual);
+        Assertions.assertEquals("1", actual);
     }
 
     @Test
@@ -45,10 +45,10 @@ public class CountOffGameTest {
 
 //        when
         CountOffGame countOffGame = new CountOffGame();
-        String actual = CountOffGame.play(number);
+        String actual = countOffGame.play(number);
 
 //        then
-        Assertions.assertEquals("Fizz",actual);
+        Assertions.assertEquals("Fizz", actual);
     }
 
     @Test
@@ -58,10 +58,10 @@ public class CountOffGameTest {
 
 //        when
         CountOffGame countOffGame = new CountOffGame();
-        String actual = CountOffGame.play(number);
+        String actual = countOffGame.play(number);
 
 //        then
-        Assertions.assertEquals("Buzz",actual);
+        Assertions.assertEquals("Buzz", actual);
     }
 
     @Test
@@ -71,10 +71,10 @@ public class CountOffGameTest {
 
 //        when
         CountOffGame countOffGame = new CountOffGame();
-        String actual = CountOffGame.play(number);
+        String actual = countOffGame.play(number);
 
 //        then
-        Assertions.assertEquals("Whizz",actual);
+        Assertions.assertEquals("Whizz", actual);
     }
 
     @Test
@@ -84,10 +84,10 @@ public class CountOffGameTest {
 
 //        when
         CountOffGame countOffGame = new CountOffGame();
-        String actual = CountOffGame.play(number);
+        String actual = countOffGame.play(number);
 
 //        then
-        Assertions.assertEquals("FizzBuzz",actual);
+        Assertions.assertEquals("FizzBuzz", actual);
     }
 
     @Test
@@ -97,11 +97,12 @@ public class CountOffGameTest {
 
 //        when
         CountOffGame countOffGame = new CountOffGame();
-        String actual = CountOffGame.play(number);
+        String actual = countOffGame.play(number);
 
 //        then
-        Assertions.assertEquals("BuzzWhizz",actual);
+        Assertions.assertEquals("BuzzWhizz", actual);
     }
+
     @Test
     void should_given_105_when_play_count_off_game_then_return_FizzBuzzWhizz() {
 //        given
@@ -109,9 +110,9 @@ public class CountOffGameTest {
 
 //        when
         CountOffGame countOffGame = new CountOffGame();
-        String actual = CountOffGame.play(number);
+        String actual = countOffGame.play(number);
 
 //        then
-        Assertions.assertEquals("FizzBuzzWhizz",actual);
+        Assertions.assertEquals("FizzBuzzWhizz", actual);
     }
 }
