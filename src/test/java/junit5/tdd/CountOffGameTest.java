@@ -102,4 +102,16 @@ public class CountOffGameTest {
 //        then
         Assertions.assertEquals("BuzzWhizz",actual);
     }
+    @Test
+    void should_given_105_when_play_count_off_game_then_return_FizzBuzzWhizz() {
+//        given
+        int number = 105;
+
+//        when
+        CountOffGame countOffGame = new CountOffGame();
+        String actual = CountOffGame.play(number);
+
+//        then
+        Assertions.assertEquals("FizzBuzzWhizz",actual);
+    }
 }
