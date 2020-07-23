@@ -17,6 +17,8 @@ import org.junit.jupiter.api.Test;
 * 测试用例6:
 * input: 21, output: FizzWhizz
 * 测试用例7:
+* input: 35, output: BuzzWhizz
+* 测试用例8:
 * input: 105, output: FizzBuzzWhizz
 *
 * [Junit-TDD-practice][spike lu] feature: implement given 1 when count off game play then return 1.
@@ -49,7 +51,6 @@ public class CountOffGameTest {
         Assertions.assertEquals("Fizz",actual);
     }
 
-
     @Test
     void should_given_5_when_play_count_off_game_then_return_Buzz() {
 //        given
@@ -62,7 +63,6 @@ public class CountOffGameTest {
 //        then
         Assertions.assertEquals("Buzz",actual);
     }
-
 
     @Test
     void should_given_7_when_play_count_off_game_then_return_Whizz() {
@@ -89,4 +89,6 @@ public class CountOffGameTest {
 //        then
         Assertions.assertEquals("FizzBuzz",actual);
     }
+
+
 }
